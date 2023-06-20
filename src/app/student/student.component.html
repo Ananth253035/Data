@@ -1,0 +1,20 @@
+
+<div class="container">
+    
+    <h1 align="center">Student Data</h1>
+    <table align="center" border="3">
+        <thead class="bg-danger">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody class="bg-info">
+            <tr *ngFor="let s of student">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.cgpa}}</td>
+            </tr>
+        </tbody>
+    </table>

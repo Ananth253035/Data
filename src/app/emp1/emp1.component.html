@@ -1,0 +1,23 @@
+<div class="container">
+    
+<h1 align="center">Employee Data</h1>
+<table class="table table-bordered table-stripped table-ho">
+    <thead class="bg-danger">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody class="bg-info">
+        <tr *ngFor="let e of employee">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.salary}}</td>
+            <td>{{e.gender}}</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
